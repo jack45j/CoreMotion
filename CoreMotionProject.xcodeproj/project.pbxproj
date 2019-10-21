@@ -3,25 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4608359B2358C51600F7F8B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4608359A2358C51600F7F8B1 /* LoginViewController.swift */; };
+		4608359D2358CA8B00F7F8B1 /* LoginViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4608359C2358CA8B00F7F8B1 /* LoginViewControllerViewModel.swift */; };
+		4608359F2358E1EE00F7F8B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4608359E2358E1EE00F7F8B1 /* MainViewController.swift */; };
+		460835A1235A0DD100F7F8B1 /* ArticlesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460835A0235A0DD100F7F8B1 /* ArticlesDataModel.swift */; };
+		460835A3235A0FBA00F7F8B1 /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 460835A2235A0FBA00F7F8B1 /* articles.json */; };
+		460835A5235B80A300F7F8B1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460835A4235B80A300F7F8B1 /* Settings.swift */; };
+		460835AC235B84FD00F7F8B1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460835AB235B84FD00F7F8B1 /* SettingsViewController.swift */; };
 		4620805D2351CC2200D5C374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4620805C2351CC2200D5C374 /* AppDelegate.swift */; };
 		4620805F2351CC2200D5C374 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4620805E2351CC2200D5C374 /* ViewController.swift */; };
 		462080622351CC2200D5C374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462080602351CC2200D5C374 /* Main.storyboard */; };
 		462080642351CC2300D5C374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462080632351CC2300D5C374 /* Assets.xcassets */; };
 		462080672351CC2300D5C374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462080652351CC2300D5C374 /* LaunchScreen.storyboard */; };
+		462A622D2358A5F3000E3184 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A622C2358A5F3000E3184 /* ViewModelType.swift */; };
+		A1143DE9FF4020685DC5A24A /* Pods_CoreMotionProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948AEBD49BAFE39C94010584 /* Pods_CoreMotionProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		462080592351CC2200D5C374 /* CoreMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		268A30290A66AE9340541E2F /* Pods-CoreMotion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMotion.debug.xcconfig"; path = "Target Support Files/Pods-CoreMotion/Pods-CoreMotion.debug.xcconfig"; sourceTree = "<group>"; };
+		4608359A2358C51600F7F8B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4608359C2358CA8B00F7F8B1 /* LoginViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerViewModel.swift; sourceTree = "<group>"; };
+		4608359E2358E1EE00F7F8B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		460835A0235A0DD100F7F8B1 /* ArticlesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesDataModel.swift; sourceTree = "<group>"; };
+		460835A2235A0FBA00F7F8B1 /* articles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = articles.json; sourceTree = "<group>"; };
+		460835A4235B80A300F7F8B1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		460835AB235B84FD00F7F8B1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		462080592351CC2200D5C374 /* CoreMotionProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMotionProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4620805C2351CC2200D5C374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4620805E2351CC2200D5C374 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		462080612351CC2200D5C374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		462080632351CC2300D5C374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		462080662351CC2300D5C374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		462080682351CC2300D5C374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		462A622C2358A5F3000E3184 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		948AEBD49BAFE39C94010584 /* Pods_CoreMotionProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreMotionProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01E1FB2966C84FD00495E6E /* Pods-CoreMotionProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMotionProject.release.xcconfig"; path = "Target Support Files/Pods-CoreMotionProject/Pods-CoreMotionProject.release.xcconfig"; sourceTree = "<group>"; };
+		BF022E86C16A647C873BA2D2 /* Pods-CoreMotion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMotion.release.xcconfig"; path = "Target Support Files/Pods-CoreMotion/Pods-CoreMotion.release.xcconfig"; sourceTree = "<group>"; };
+		FAD9B36CAFEF54A37A0F37D7 /* Pods-CoreMotionProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMotionProject.debug.xcconfig"; path = "Target Support Files/Pods-CoreMotionProject/Pods-CoreMotionProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,24 +51,90 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1143DE9FF4020685DC5A24A /* Pods_CoreMotionProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CA539D773A157B423A9E0DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				268A30290A66AE9340541E2F /* Pods-CoreMotion.debug.xcconfig */,
+				BF022E86C16A647C873BA2D2 /* Pods-CoreMotion.release.xcconfig */,
+				FAD9B36CAFEF54A37A0F37D7 /* Pods-CoreMotionProject.debug.xcconfig */,
+				A01E1FB2966C84FD00495E6E /* Pods-CoreMotionProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		460835A6235B848300F7F8B1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				462A622C2358A5F3000E3184 /* ViewModelType.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		460835A7235B849200F7F8B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				460835A9235B84B700F7F8B1 /* ViewController */,
+				460835A8235B84AA00F7F8B1 /* LoginViewController */,
+				460835AA235B84C000F7F8B1 /* MainViewController */,
+				460835AD235B850600F7F8B1 /* SettingsViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		460835A8235B84AA00F7F8B1 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4608359A2358C51600F7F8B1 /* LoginViewController.swift */,
+				4608359C2358CA8B00F7F8B1 /* LoginViewControllerViewModel.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		460835A9235B84B700F7F8B1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4620805E2351CC2200D5C374 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		460835AA235B84C000F7F8B1 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4608359E2358E1EE00F7F8B1 /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		460835AD235B850600F7F8B1 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				460835AB235B84FD00F7F8B1 /* SettingsViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
 		462080502351CC2200D5C374 = {
 			isa = PBXGroup;
 			children = (
 				4620805B2351CC2200D5C374 /* CoreMotion */,
 				4620805A2351CC2200D5C374 /* Products */,
+				1CA539D773A157B423A9E0DB /* Pods */,
+				6A256EB4C03BB106B19C7221 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		4620805A2351CC2200D5C374 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				462080592351CC2200D5C374 /* CoreMotion.app */,
+				462080592351CC2200D5C374 /* CoreMotionProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,33 +143,47 @@
 			isa = PBXGroup;
 			children = (
 				4620805C2351CC2200D5C374 /* AppDelegate.swift */,
-				4620805E2351CC2200D5C374 /* ViewController.swift */,
+				460835A7235B849200F7F8B1 /* View */,
 				462080602351CC2200D5C374 /* Main.storyboard */,
 				462080632351CC2300D5C374 /* Assets.xcassets */,
 				462080652351CC2300D5C374 /* LaunchScreen.storyboard */,
 				462080682351CC2300D5C374 /* Info.plist */,
+				460835A6235B848300F7F8B1 /* Util */,
+				460835A0235A0DD100F7F8B1 /* ArticlesDataModel.swift */,
+				460835A2235A0FBA00F7F8B1 /* articles.json */,
+				460835A4235B80A300F7F8B1 /* Settings.swift */,
 			);
 			path = CoreMotion;
+			sourceTree = "<group>";
+		};
+		6A256EB4C03BB106B19C7221 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				948AEBD49BAFE39C94010584 /* Pods_CoreMotionProject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		462080582351CC2200D5C374 /* CoreMotion */ = {
+		462080582351CC2200D5C374 /* CoreMotionProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4620806B2351CC2300D5C374 /* Build configuration list for PBXNativeTarget "CoreMotion" */;
+			buildConfigurationList = 4620806B2351CC2300D5C374 /* Build configuration list for PBXNativeTarget "CoreMotionProject" */;
 			buildPhases = (
+				062B86450619ED5E63A445CD /* [CP] Check Pods Manifest.lock */,
 				462080552351CC2200D5C374 /* Sources */,
 				462080562351CC2200D5C374 /* Frameworks */,
 				462080572351CC2200D5C374 /* Resources */,
+				89F1E8111EA381249E63E919 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CoreMotion;
+			name = CoreMotionProject;
 			productName = CoreMotion;
-			productReference = 462080592351CC2200D5C374 /* CoreMotion.app */;
+			productReference = 462080592351CC2200D5C374 /* CoreMotionProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +201,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 462080542351CC2200D5C374 /* Build configuration list for PBXProject "CoreMotion" */;
+			buildConfigurationList = 462080542351CC2200D5C374 /* Build configuration list for PBXProject "CoreMotionProject" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +214,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				462080582351CC2200D5C374 /* CoreMotion */,
+				462080582351CC2200D5C374 /* CoreMotionProject */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460835A3235A0FBA00F7F8B1 /* articles.json in Resources */,
 				462080672351CC2300D5C374 /* LaunchScreen.storyboard in Resources */,
 				462080642351CC2300D5C374 /* Assets.xcassets in Resources */,
 				462080622351CC2200D5C374 /* Main.storyboard in Resources */,
@@ -130,13 +233,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		062B86450619ED5E63A445CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreMotionProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89F1E8111EA381249E63E919 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreMotionProject/Pods-CoreMotionProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreMotionProject/Pods-CoreMotionProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoreMotionProject/Pods-CoreMotionProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		462080552351CC2200D5C374 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460835A1235A0DD100F7F8B1 /* ArticlesDataModel.swift in Sources */,
+				4608359B2358C51600F7F8B1 /* LoginViewController.swift in Sources */,
+				460835A5235B80A300F7F8B1 /* Settings.swift in Sources */,
+				4608359D2358CA8B00F7F8B1 /* LoginViewControllerViewModel.swift in Sources */,
 				4620805F2351CC2200D5C374 /* ViewController.swift in Sources */,
+				4608359F2358E1EE00F7F8B1 /* MainViewController.swift in Sources */,
+				462A622D2358A5F3000E3184 /* ViewModelType.swift in Sources */,
 				4620805D2351CC2200D5C374 /* AppDelegate.swift in Sources */,
+				460835AC235B84FD00F7F8B1 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +432,13 @@
 		};
 		4620806C2351CC2300D5C374 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAD9B36CAFEF54A37A0F37D7 /* Pods-CoreMotionProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79399T3H3C;
 				INFOPLIST_FILE = CoreMotion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +452,13 @@
 		};
 		4620806D2351CC2300D5C374 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A01E1FB2966C84FD00495E6E /* Pods-CoreMotionProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79399T3H3C;
 				INFOPLIST_FILE = CoreMotion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +473,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		462080542351CC2200D5C374 /* Build configuration list for PBXProject "CoreMotion" */ = {
+		462080542351CC2200D5C374 /* Build configuration list for PBXProject "CoreMotionProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				462080692351CC2300D5C374 /* Debug */,
@@ -326,7 +482,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4620806B2351CC2300D5C374 /* Build configuration list for PBXNativeTarget "CoreMotion" */ = {
+		4620806B2351CC2300D5C374 /* Build configuration list for PBXNativeTarget "CoreMotionProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4620806C2351CC2300D5C374 /* Debug */,
