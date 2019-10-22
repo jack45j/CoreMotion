@@ -25,9 +25,19 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let userName = UserDefaults.standard.string(forKey: "UserName") {
+            self.loginTextField.text = "\(userName)"
+        }
+        
         bindViewModel()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
+        
+        
+    }
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        UserDefaults.standard.set(self.loginTextField.text ?? "", forKey: "UserName")
     }
     
     @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
@@ -35,7 +45,7 @@ class LoginViewController: UIViewController {
     }
     
     func bindViewModel() {
-        let viewModelInput = LoginViewControllerViewModel.Input(loginTextFieldValue: loginTextField.rx.controlEvent(.editingDidEnd).flatMap { self.loginTextField.rx.text.asObservable() })
+        let viewModelInput = LoginViewControllerViewModel.Input(loginTextFieldValue: self.loginTextField.rx.text.asObservable())
         let viewModelOutput = viewModel.transform(input: viewModelInput)
         
         

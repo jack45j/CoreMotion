@@ -14,6 +14,7 @@
 		460835A3235A0FBA00F7F8B1 /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 460835A2235A0FBA00F7F8B1 /* articles.json */; };
 		460835A5235B80A300F7F8B1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460835A4235B80A300F7F8B1 /* Settings.swift */; };
 		460835AC235B84FD00F7F8B1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460835AB235B84FD00F7F8B1 /* SettingsViewController.swift */; };
+		460835AF235E177B00F7F8B1 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460835AE235E177B00F7F8B1 /* ResultViewController.swift */; };
 		4620805D2351CC2200D5C374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4620805C2351CC2200D5C374 /* AppDelegate.swift */; };
 		4620805F2351CC2200D5C374 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4620805E2351CC2200D5C374 /* ViewController.swift */; };
 		462080622351CC2200D5C374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462080602351CC2200D5C374 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		460835A2235A0FBA00F7F8B1 /* articles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = articles.json; sourceTree = "<group>"; };
 		460835A4235B80A300F7F8B1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		460835AB235B84FD00F7F8B1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		460835AE235E177B00F7F8B1 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		462080592351CC2200D5C374 /* CoreMotionProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMotionProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4620805C2351CC2200D5C374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4620805E2351CC2200D5C374 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				460835A8235B84AA00F7F8B1 /* LoginViewController */,
 				460835AA235B84C000F7F8B1 /* MainViewController */,
 				460835AD235B850600F7F8B1 /* SettingsViewController */,
+				460835B0235E178400F7F8B1 /* ResultViewController */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +122,14 @@
 				460835AB235B84FD00F7F8B1 /* SettingsViewController.swift */,
 			);
 			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		460835B0235E178400F7F8B1 /* ResultViewController */ = {
+			isa = PBXGroup;
+			children = (
+				460835AE235E177B00F7F8B1 /* ResultViewController.swift */,
+			);
+			path = ResultViewController;
 			sourceTree = "<group>";
 		};
 		462080502351CC2200D5C374 = {
@@ -285,6 +296,7 @@
 				460835A5235B80A300F7F8B1 /* Settings.swift in Sources */,
 				4608359D2358CA8B00F7F8B1 /* LoginViewControllerViewModel.swift in Sources */,
 				4620805F2351CC2200D5C374 /* ViewController.swift in Sources */,
+				460835AF235E177B00F7F8B1 /* ResultViewController.swift in Sources */,
 				4608359F2358E1EE00F7F8B1 /* MainViewController.swift in Sources */,
 				462A622D2358A5F3000E3184 /* ViewModelType.swift in Sources */,
 				4620805D2351CC2200D5C374 /* AppDelegate.swift in Sources */,
@@ -436,14 +448,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 79399T3H3C;
 				INFOPLIST_FILE = CoreMotion/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ycstudio.CoreMotion;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ycstudio.CoreMotionPJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,14 +470,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 79399T3H3C;
 				INFOPLIST_FILE = CoreMotion/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ycstudio.CoreMotion;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ycstudio.CoreMotionPJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

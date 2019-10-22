@@ -31,7 +31,7 @@ class LoginViewControllerViewModel: ViewModelType {
         let validatedUsername = input
             .loginTextFieldValue
             .filter { $0 != nil }
-            .map { return $0!.count > 2 ? true : false }
+            .map { return $0!.count > 0 ? true : false }
             .asDriver(onErrorJustReturn: false)
             
         
