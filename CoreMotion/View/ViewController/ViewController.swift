@@ -23,8 +23,9 @@ class ViewController: UIViewController {
     var currentArticle = 0
     let defaultUDValue: [String : Any] =
         ["SelectedArticle": 0,
-         "CircleScaleMag": 1,
-         "CircleSize": 2]
+         "CircleScaleMag": 0,
+         "CircleSize": 2,
+         "CircleSpace": 60]
     //---------
     
     let disposeBag = DisposeBag()
@@ -53,7 +54,7 @@ class ViewController: UIViewController {
     
     // 設定
     var comporasion = 0.00
-    let circleSpace = 60.0
+    var circleSpace = 60.0
     var currentHeading: Double = 0.0
     var scaleMag: CGFloat = 2.0
     var circleSize: CGFloat = 1.0
@@ -90,8 +91,10 @@ class ViewController: UIViewController {
             self.scaleMag = 2
         }
         self.circleSize = (CGFloat(userDefaults.integer(forKey: "CircleSize"))*0.25+0.5)
+        self.circleSpace = Double(userDefaults.integer(forKey: "CircleSpace"))
         self.mainColor = userDefaults.colorForKey(key: "MainColor")!
         self.subColor = userDefaults.colorForKey(key: "SubColor")!
+        self.view.backgroundColor = userDefaults.colorForKey(key: "BgColor") ?? UIColor.white
         
         // Data Decode
         if let path = Bundle.main.path(forResource: "articles", ofType: "json") {
@@ -220,21 +223,29 @@ class ViewController: UIViewController {
     }
     @IBAction func endAnswerButtonPressed(_ sender: Any) {
         
-        if (firstOptionButton.selected() != nil) {
-            // 對答案
-            if self.currentSelectedOption == articles?.articles?[self.currentArticle].answer {
-                self.answeredQuestions[self.currentArticle] = true
-            } else {
-                self.answeredQuestions[self.currentArticle] = false
+        let alertController = UIAlertController(title: "注意！", message: "是否結算閱讀紀錄？", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "好的", style: .destructive, handler: { (alert: UIAlertAction!) in
+            if (self.firstOptionButton.selected() != nil) {
+                // 對答案
+                if self.currentSelectedOption == self.articles?.articles?[self.currentArticle].answer {
+                    self.answeredQuestions[self.currentArticle] = true
+                } else {
+                    self.answeredQuestions[self.currentArticle] = false
+                }
             }
-        }
+            let resultVC = ResultViewController(StartArticle: self.startArticles+1,
+                                                EndArticle: self.currentArticle+1,
+                                                Answered: self.answeredQuestions.count,
+                                                Correct: self.answeredQuestions.filter { $0.value == true }.count,
+                                                Incorrect: self.answeredQuestions.filter { $0.value == false }.count)
+            self.navigationController?.pushViewController(resultVC, animated: true)
+        })
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        alertController.addAction(okAction)
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
         
-        let resultVC = ResultViewController(StartArticle: self.startArticles+1,
-                                            EndArticle: self.currentArticle+1,
-                                            Answered: self.answeredQuestions.count,
-                                            Correct: self.answeredQuestions.filter { $0.value == true }.count,
-                                            Incorrect: self.answeredQuestions.filter { $0.value == false }.count)
-        self.navigationController?.pushViewController(resultVC, animated: true)
+        
     }
     
     func applyCircles() {
@@ -297,7 +308,6 @@ class ViewController: UIViewController {
             .didUpdateHeading
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { heading in
-                
                 let headDegree = heading.newHeading.trueHeading
                 self.currentHeading = headDegree
                 let prefix = CGFloat(Int(headDegree/self.circleSpace))*self.screenWidth
@@ -322,17 +332,29 @@ class ViewController: UIViewController {
                 let zData = (Double(String(format: "%.2f", data.acceleration.z))!)
                 let newData = (xData + yData + zData)/3
                 let scaleValue = CGFloat((newData - self!.comporasion))
-                
-                UIView.animate(withDuration: 0.8, animations: {
-                    self?.upCircles?.forEach({ (circle) in
-                        circle.transform = CGAffineTransform(scaleX: 1 - self!.scaleMag*scaleValue, y: 1 - self!.scaleMag*scaleValue)
+                if scaleValue >= 0.1 {
+                    UIView.animate(withDuration: 0.8, animations: {
+                        self?.upCircles?.forEach({ (circle) in
+                            circle.transform = CGAffineTransform(scaleX: 1 - self!.scaleMag*scaleValue, y: 1 - self!.scaleMag*scaleValue)
+                        })
                     })
-                })
-                UIView.animate(withDuration: 0.8, animations: {
-                    self?.bottomCircles?.forEach({ (circle) in
-                        circle.transform = CGAffineTransform(scaleX: 1 - self!.scaleMag*scaleValue, y: 1 - self!.scaleMag*scaleValue)
+                    UIView.animate(withDuration: 0.8, animations: {
+                        self?.bottomCircles?.forEach({ (circle) in
+                            circle.transform = CGAffineTransform(scaleX: 1 - self!.scaleMag*scaleValue, y: 1 - self!.scaleMag*scaleValue)
+                        })
                     })
-                })
+                } else {
+                    UIView.animate(withDuration: 0.8, animations: {
+                        self?.bottomCircles?.forEach({ (circle) in
+                            circle.transform = CGAffineTransform(scaleX: 1, y: 1)
+                        })
+                    })
+                    UIView.animate(withDuration: 0.8, animations: {
+                        self?.upCircles?.forEach({ (circle) in
+                            circle.transform = CGAffineTransform(scaleX: 1, y: 1)
+                        })
+                    })
+                }
                 self?.comporasion = newData
             })
             .disposed(by: self.disposeBag)

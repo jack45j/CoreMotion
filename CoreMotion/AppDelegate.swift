@@ -17,13 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         if UserDefaults.standard.colorForKey(key: "CircleColor") == nil {
-            UserDefaults.standard.setColor(color: UIColor.black, forKey: "CircleColor")
+            UserDefaults.standard.setColor(color: UIColor(red: 239/255, green: 239/255, blue: 239/255, alpha: 1), forKey: "CircleColor")
         }
         if UserDefaults.standard.colorForKey(key: "MainColor") == nil {
-            UserDefaults.standard.setColor(color: UIColor.systemRed, forKey: "MainColor")
+            UserDefaults.standard.setColor(color: UIColor.black, forKey: "MainColor")
         }
         if UserDefaults.standard.colorForKey(key: "SubColor") == nil {
-            UserDefaults.standard.setColor(color: UIColor.systemGreen, forKey: "SubColor")
+            UserDefaults.standard.setColor(color: UIColor(red: 63/255, green: 177/255, blue: 138/255, alpha: 1), forKey: "SubColor")
         }
         
         return true

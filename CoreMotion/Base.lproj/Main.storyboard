@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kKf-Gm-XXD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -97,10 +96,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1946"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mt-0M-fox">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1148"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="948"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="1oh-55-zqH">
-                                                <rect key="frame" x="32" y="0.0" width="350" height="1148"/>
+                                                <rect key="frame" x="32" y="0.0" width="350" height="948"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="標題" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwP-ys-w18">
                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="88"/>
@@ -118,13 +117,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="題目" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jN0-D4-hct">
-                                                        <rect key="frame" x="0.0" y="600" width="350" height="28"/>
+                                                        <rect key="frame" x="0.0" y="400" width="350" height="28"/>
                                                         <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="20"/>
                                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RgM-tD-mgL">
-                                                        <rect key="frame" x="0.0" y="644" width="350" height="216"/>
+                                                        <rect key="frame" x="0.0" y="444" width="350" height="216"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXf-8i-BZb" customClass="DLRadioButton">
                                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="39"/>
@@ -240,7 +239,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYd-Lv-0QJ">
-                                                        <rect key="frame" x="0.0" y="940" width="350" height="88"/>
+                                                        <rect key="frame" x="0.0" y="740" width="350" height="88"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="88" id="DBr-5x-u2C"/>
                                                         </constraints>
@@ -256,7 +255,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z12-Lq-ZIX">
-                                                        <rect key="frame" x="0.0" y="1060" width="350" height="88"/>
+                                                        <rect key="frame" x="0.0" y="860" width="350" height="88"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="88" id="a5w-7Y-leN"/>
                                                         </constraints>
@@ -271,7 +270,7 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="mYd-Lv-0QJ" firstAttribute="top" secondItem="RgM-tD-mgL" secondAttribute="bottom" constant="80" id="8r2-fM-Twb"/>
-                                                    <constraint firstItem="jN0-D4-hct" firstAttribute="top" secondItem="DzR-rk-sc2" secondAttribute="bottom" constant="400" id="HDC-Dd-X1Q"/>
+                                                    <constraint firstItem="jN0-D4-hct" firstAttribute="top" secondItem="DzR-rk-sc2" secondAttribute="bottom" constant="200" id="HDC-Dd-X1Q"/>
                                                     <constraint firstItem="RgM-tD-mgL" firstAttribute="top" secondItem="jN0-D4-hct" secondAttribute="bottom" constant="16" id="OSr-Oe-4l3"/>
                                                     <constraint firstItem="Z12-Lq-ZIX" firstAttribute="top" secondItem="mYd-Lv-0QJ" secondAttribute="bottom" constant="32" id="ZZL-Ng-dFy"/>
                                                     <constraint firstItem="DzR-rk-sc2" firstAttribute="top" secondItem="hwP-ys-w18" secondAttribute="bottom" id="jbM-oJ-sIy"/>
@@ -306,6 +305,7 @@
                             <constraint firstItem="Sc1-pX-Ql0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UC7-UT-9f9"/>
                             <constraint firstItem="Sc1-pX-Ql0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pBM-1f-hbB"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="zkv-4b-DdQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="MWA-ZL-WYm">
                         <barButtonItem key="rightBarButtonItem" image="gear" catalog="system" landscapeImage="gear" style="plain" id="a6N-qk-Ken">
@@ -336,17 +336,17 @@
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" id="0vz-Yu-cMb" customClass="SettingsViewController" customModule="CoreMotionProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Rf-Sf-8k9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="vIs-y4-Cd0">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1946"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alO-Wb-JIX">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1946"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="pJJ-Ic-YiM">
-                                                <rect key="frame" x="36" y="16" width="342" height="1446"/>
+                                                <rect key="frame" x="36" y="16" width="342" height="1946"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="d8M-pu-Qq1">
                                                         <rect key="frame" x="0.0" y="0.0" width="342" height="137"/>
@@ -403,151 +403,35 @@
                                                             <constraint firstItem="5Vv-fy-1Bs" firstAttribute="leading" secondItem="d8M-pu-Qq1" secondAttribute="leading" id="iCW-Rq-Sxk"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nyR-Ci-cRq">
-                                                        <rect key="frame" x="0.0" y="272" width="342" height="222.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="k89-iW-7AC">
+                                                        <rect key="frame" x="0.0" y="253" width="342" height="327"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="球體顏色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxI-wX-0Ze">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="球體間隔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsI-Gr-ee6">
                                                                 <rect key="frame" x="0.0" y="0.0" width="342" height="38.5"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="38.5" id="Dsg-pg-Gu7"/>
+                                                                    <constraint firstAttribute="height" constant="38.5" id="fT6-ox-j6l"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="9fg-RK-GoI">
-                                                                <rect key="frame" x="-2" y="54.5" width="346" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="30" id="2KK-3o-aNL"/>
-                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="TVs-Zb-POh"/>
-                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="XpL-Ba-K5g"/>
-                                                                </constraints>
-                                                                <color key="minimumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </slider>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="W1S-up-uOa">
-                                                                <rect key="frame" x="-2" y="100.5" width="346" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="30" id="FaK-IS-48H"/>
-                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="Uxo-74-9ci"/>
-                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="icx-aS-E5f"/>
-                                                                </constraints>
-                                                                <color key="minimumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </slider>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="ly9-DJ-ZVp">
-                                                                <rect key="frame" x="-2" y="146.5" width="346" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="30" id="Qjs-V0-W5U"/>
-                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="hWb-ga-JjZ"/>
-                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="n2C-s7-TSZ"/>
-                                                                </constraints>
-                                                                <color key="minimumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </slider>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RJX-Lu-neC">
-                                                                <rect key="frame" x="-2" y="192.5" width="346" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Qyb-K6-umF"/>
-                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="V7z-3m-w6a"/>
-                                                                    <constraint firstAttribute="height" constant="30" id="rDI-6u-jmh"/>
-                                                                </constraints>
-                                                                <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </slider>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VuQ-Uh-Y4G">
-                                                        <rect key="frame" x="0.0" y="630" width="342" height="178"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主題顏色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwr-57-oc5">
-                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="40"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="MiT-KU-6PW"/>
-                                                                    <constraint firstAttribute="height" constant="40" id="tPs-Ax-3BH"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vq4-RN-wRA">
+                                                                <rect key="frame" x="0.0" y="54.5" width="342" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="8a9-qN-KKQ">
-                                                                <rect key="frame" x="-2" y="56" width="346" height="31"/>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="10" maxValue="360" translatesAutoresizingMaskIntoConstraints="NO" id="sWT-gv-Nkl">
+                                                                <rect key="frame" x="-2" y="91" width="346" height="31"/>
+                                                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="30" id="4hC-eV-lPc"/>
-                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="hsH-dw-Fyd"/>
-                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="nAP-jl-qRQ"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="0nO-LH-esr"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="7sP-5l-1B9"/>
+                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="LS5-i3-pax"/>
                                                                 </constraints>
-                                                                <color key="minimumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </slider>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="RhW-Xw-sCO">
-                                                                <rect key="frame" x="-2" y="102" width="346" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="30" id="hxI-h6-cxX"/>
-                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="jZO-Rq-qUZ"/>
-                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="wNG-kr-lWn"/>
-                                                                </constraints>
-                                                                <color key="minimumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </slider>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="mFj-vq-O4n">
-                                                                <rect key="frame" x="-2" y="148" width="346" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="30" id="1Et-xp-Hsq"/>
-                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="KBh-Pc-mGB"/>
-                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="fKp-Pp-cVg"/>
-                                                                </constraints>
-                                                                <color key="minimumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </slider>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="abF-sS-2e1">
-                                                        <rect key="frame" x="0.0" y="943" width="342" height="178"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="副顏色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpg-nf-ke0">
-                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="40"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="40" id="fj3-2y-sJ8"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="SSO-Fp-dwv">
-                                                                <rect key="frame" x="-2" y="56" width="346" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="3vI-4Q-qdZ"/>
-                                                                    <constraint firstAttribute="height" constant="30" id="Lq1-Cz-YxS"/>
-                                                                </constraints>
-                                                                <color key="minimumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </slider>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="vEe-71-ONa">
-                                                                <rect key="frame" x="-2" y="102" width="346" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="CjL-tc-Ebv"/>
-                                                                    <constraint firstAttribute="height" constant="30" id="FI7-M1-d0d"/>
-                                                                </constraints>
-                                                                <color key="minimumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </slider>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="IJz-ci-IHr">
-                                                                <rect key="frame" x="-2" y="148" width="346" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="30" id="KYL-rw-2Kj"/>
-                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Kv1-Q8-daS"/>
-                                                                </constraints>
-                                                                <color key="minimumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </slider>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="k89-iW-7AC">
-                                                        <rect key="frame" x="0.0" y="1256" width="342" height="190"/>
-                                                        <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="球體縮放級距" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwn-2p-5jA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="40"/>
+                                                                <rect key="frame" x="0.0" y="137" width="342" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ene-le-IfI"/>
                                                                     <constraint firstAttribute="height" constant="40" id="uPS-RQ-UJr"/>
@@ -557,7 +441,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLN-O4-UjG">
-                                                                <rect key="frame" x="0.0" y="56" width="342" height="32"/>
+                                                                <rect key="frame" x="0.0" y="193" width="342" height="32"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="31" id="He1-aS-vAS"/>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="Qqo-72-02l"/>
@@ -570,7 +454,7 @@
                                                                 </segments>
                                                             </segmentedControl>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="球體原始大小" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjc-8r-f4q">
-                                                                <rect key="frame" x="0.0" y="103" width="342" height="40"/>
+                                                                <rect key="frame" x="0.0" y="240" width="342" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="91d-Y9-0H1"/>
                                                                     <constraint firstAttribute="height" constant="40" id="wMf-CP-u7K"/>
@@ -580,7 +464,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INk-mb-VrR">
-                                                                <rect key="frame" x="0.0" y="159" width="342" height="32"/>
+                                                                <rect key="frame" x="0.0" y="296" width="342" height="32"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="e1l-fo-A6M"/>
                                                                     <constraint firstAttribute="height" constant="31" id="zkw-BS-F3e"/>
@@ -593,6 +477,211 @@
                                                                     <segment title="1.5x"/>
                                                                 </segments>
                                                             </segmentedControl>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nyR-Ci-cRq">
+                                                        <rect key="frame" x="0.0" y="696" width="342" height="259"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="球體顏色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxI-wX-0Ze">
+                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="38.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="38.5" id="Dsg-pg-Gu7"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJo-Ss-Kv5">
+                                                                <rect key="frame" x="0.0" y="54.5" width="342" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="9fg-RK-GoI">
+                                                                <rect key="frame" x="-2" y="91" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="2KK-3o-aNL"/>
+                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="TVs-Zb-POh"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="XpL-Ba-K5g"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="W1S-up-uOa">
+                                                                <rect key="frame" x="-2" y="137" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="FaK-IS-48H"/>
+                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="Uxo-74-9ci"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="icx-aS-E5f"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="ly9-DJ-ZVp">
+                                                                <rect key="frame" x="-2" y="183" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="Qjs-V0-W5U"/>
+                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="hWb-ga-JjZ"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="n2C-s7-TSZ"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RJX-Lu-neC">
+                                                                <rect key="frame" x="-2" y="229" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Qyb-K6-umF"/>
+                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="V7z-3m-w6a"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="rDI-6u-jmh"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VuQ-Uh-Y4G">
+                                                        <rect key="frame" x="0.0" y="1070.5" width="342" height="214.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主題顏色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwr-57-oc5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="MiT-KU-6PW"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="tPs-Ax-3BH"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc2-0x-8bo">
+                                                                <rect key="frame" x="0.0" y="56" width="342" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="8a9-qN-KKQ">
+                                                                <rect key="frame" x="-2" y="92.5" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="4hC-eV-lPc"/>
+                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="hsH-dw-Fyd"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="nAP-jl-qRQ"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="RhW-Xw-sCO">
+                                                                <rect key="frame" x="-2" y="138.5" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="hxI-h6-cxX"/>
+                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="jZO-Rq-qUZ"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="wNG-kr-lWn"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="mFj-vq-O4n">
+                                                                <rect key="frame" x="-2" y="184.5" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="1Et-xp-Hsq"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="KBh-Pc-mGB"/>
+                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="fKp-Pp-cVg"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="abF-sS-2e1">
+                                                        <rect key="frame" x="0.0" y="1401" width="342" height="214.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="副顏色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpg-nf-ke0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="fj3-2y-sJ8"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qw-XP-ta6">
+                                                                <rect key="frame" x="0.0" y="56" width="342" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="SSO-Fp-dwv">
+                                                                <rect key="frame" x="-2" y="92.5" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="3vI-4Q-qdZ"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="Lq1-Cz-YxS"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="vEe-71-ONa">
+                                                                <rect key="frame" x="-2" y="138.5" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="CjL-tc-Ebv"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="FI7-M1-d0d"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="IJz-ci-IHr">
+                                                                <rect key="frame" x="-2" y="184.5" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="KYL-rw-2Kj"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Kv1-Q8-daS"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mL7-Jy-c9t">
+                                                        <rect key="frame" x="0.0" y="1731.5" width="342" height="214.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="背景" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-8X-2sa">
+                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="AKB-Rz-HeO"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6U-vi-Mfj">
+                                                                <rect key="frame" x="0.0" y="56" width="342" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Bwk-TV-uka">
+                                                                <rect key="frame" x="-2" y="92.5" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="6LO-Z0-fmx"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="gqm-Dh-xPT"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="45x-vn-DF3">
+                                                                <rect key="frame" x="-2" y="138.5" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="30" id="6EC-zf-qLj"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Kcz-hy-lco"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="125" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Tj9-eb-leb">
+                                                                <rect key="frame" x="-2" y="184.5" width="346" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="elN-Hv-6Br"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="yxO-rQ-blG"/>
+                                                                </constraints>
+                                                                <color key="minimumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="maximumTrackTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </slider>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -626,20 +715,30 @@
                             <constraint firstItem="vIs-y4-Cd0" firstAttribute="top" secondItem="2Rf-Sf-8k9" secondAttribute="top" id="VGV-QZ-Wk0"/>
                             <constraint firstItem="vIs-y4-Cd0" firstAttribute="leading" secondItem="2Rf-Sf-8k9" secondAttribute="leading" id="oNQ-bb-sif"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="pJh-f8-uTz"/>
                     </view>
                     <navigationItem key="navigationItem" title="設定" id="7VL-G6-RE3"/>
-                    <size key="freeformSize" width="414" height="1500"/>
+                    <size key="freeformSize" width="414" height="2000"/>
                     <connections>
                         <outlet property="alphaColorSlider" destination="RJX-Lu-neC" id="His-YX-w2r"/>
                         <outlet property="articleSelectTxtField" destination="tSa-Qo-HtY" id="bGf-AE-niG"/>
+                        <outlet property="bgColorBlueSlider" destination="Tj9-eb-leb" id="mrK-4m-32q"/>
+                        <outlet property="bgColorGreenSlider" destination="45x-vn-DF3" id="3XG-cB-0vU"/>
+                        <outlet property="bgColorLabel" destination="iBX-8X-2sa" id="dNN-nd-L6E"/>
+                        <outlet property="bgColorRedSlider" destination="Bwk-TV-uka" id="kO0-08-3dc"/>
+                        <outlet property="bgRGBLabel" destination="K6U-vi-Mfj" id="rC9-nh-Vo2"/>
                         <outlet property="blueColorSlider" destination="ly9-DJ-ZVp" id="Rtd-j3-ciL"/>
                         <outlet property="circleColorLabel" destination="FxI-wX-0Ze" id="Xak-9w-ISh"/>
+                        <outlet property="circleRGBLabel" destination="tJo-Ss-Kv5" id="vyG-iQ-T8P"/>
                         <outlet property="circleSizeSegment" destination="INk-mb-VrR" id="9He-me-bER"/>
+                        <outlet property="circleSpaceLabel" destination="vq4-RN-wRA" id="CvC-Bm-Oic"/>
+                        <outlet property="circleSpaceSlider" destination="sWT-gv-Nkl" id="vJl-vR-uTS"/>
                         <outlet property="greenColorSlider" destination="W1S-up-uOa" id="ZlR-qr-jV5"/>
                         <outlet property="mainColorBlueSlider" destination="mFj-vq-O4n" id="8yr-vW-sur"/>
                         <outlet property="mainColorGreenSlider" destination="RhW-Xw-sCO" id="yZL-3k-GaF"/>
                         <outlet property="mainColorLabel" destination="Lwr-57-oc5" id="mOY-nG-tPd"/>
                         <outlet property="mainColorRedSlider" destination="8a9-qN-KKQ" id="8q1-0N-DiH"/>
+                        <outlet property="mainRGBLabel" destination="Kc2-0x-8bo" id="txK-lB-fcD"/>
                         <outlet property="modeSegment" destination="skB-Rf-Jdr" id="HQS-bW-BAm"/>
                         <outlet property="redColorSlider" destination="9fg-RK-GoI" id="qoE-VP-4x8"/>
                         <outlet property="scaleMagSegment" destination="rLN-O4-UjG" id="SSq-t7-5AX"/>
@@ -647,6 +746,7 @@
                         <outlet property="subColorGreenSlider" destination="vEe-71-ONa" id="XaB-40-ynK"/>
                         <outlet property="subColorLabel" destination="tpg-nf-ke0" id="Vzn-5I-brj"/>
                         <outlet property="subColorRedSlider" destination="SSO-Fp-dwv" id="9sh-RV-SW4"/>
+                        <outlet property="subRGBLabel" destination="4Qw-XP-ta6" id="Hiz-LA-2jf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSf-eD-vNk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -49,7 +49,13 @@ class ResultViewController: UIViewController {
         }
         
         let DescLabel = UILabel()
-        DescLabel.text = "從第 \(self.startArticle) 篇到第 \(self.endArticle) 篇"
+        if (self.answered == 0) {
+            DescLabel.text = "尚未閱讀文章"
+        } else if (self.startArticle == self.endArticle) {
+            DescLabel.text = "已閱讀所有文章"
+        } else {
+            DescLabel.text = "從第 \(self.startArticle) 篇到第 \(self.endArticle) 篇"
+        }
         DescLabel.font = UIFont.systemFont(ofSize: 28)
         DescLabel.textColor = UserDefaults.standard.colorForKey(key: "SubColor")
         DescLabel.textAlignment = .center
@@ -98,6 +104,8 @@ class ResultViewController: UIViewController {
         self.answered = Answered
         self.correct = Correct
         self.incorrect = Incorrect
+        self.startArticle = StartArticle
+        self.endArticle = EndArticle
     }
     
     required init?(coder: NSCoder) {
